@@ -5,4 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: 'tab1.page.html',
   styleUrls: ['tab1.page.scss']
 })
-export class Tab1Page {}
+export class Tab1Page {
+  ionViewDidEnter() {
+    console.log('ionViewDidEnter triggered');
+    alert('ionViewDidEnter triggered');
+  }
+}
